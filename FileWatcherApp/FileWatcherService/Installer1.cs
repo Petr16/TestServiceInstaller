@@ -18,6 +18,8 @@ namespace FileWatcherService
 
         public Installer1()
         {
+            //C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+            //InstallUtil.exe C:\Projects\TestServiceInstaller\TestServiceInstaller\FileWatcherApp\FileWatcherService\bin\Debug\FileWatcherService.exe
             InitializeComponent();
             serviceInstaller = new ServiceInstaller();//предназначен для настройки значений для каждой из запускаемых служб.
                                                       //То есть если у нас запускается три службы, то для каждой службы создается свой объект ServiceInstaller.
