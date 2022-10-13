@@ -18,9 +18,10 @@ namespace FileWatcherService
         public Service1()
         {
             InitializeComponent();
-            this.CanStop = true;
-            this.CanPauseAndContinue = true;
-            this.AutoLog = true;
+            //https://metanit.com/sharp/tutorial/11.1.php
+            this.CanStop = true; // службу можно остановить
+            this.CanPauseAndContinue = true; // службу можно приостановить и затем продолжить
+            this.AutoLog = true; // служба может вести запись в лог
         }
 
         protected override void OnStart(string[] args)
